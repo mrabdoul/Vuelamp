@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  width: 100%;
+  color: #fff;
+  min-height: 100vh;
+  position: relative;
+  background-color: #1d2026;
+}
+nav {
+  display: flex;
+  padding: 20px 8%;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between;
+}
+.img {
+  display: flex;
+  align-items: center;
+}
+.menu-img {
+  width: 25px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.logo-img {
+  width: 160px;
+  cursor: pointer;
+}
+li {
+  display: inline;
+  margin: 0 20px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #00986f;
+}
+button {
+  background-color: #efefef;
+  height: 30px;
+  width: 60px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+button span {
+  display: block;
+  background-color: #999;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  transition: background-color 0.5s;
+  margin-left: 2px;
+}
+.lamp-container {
+  position: absolute;
+  top: 0;
+  left: 22%;
+  width: 200px;
+}
+.lamp {
+  width: 100%;
+}
+.light {
+  position: absolute;
+  top: 97%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  margin-left: -10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.text-container {
+  max-width: 600px;
+  margin-top: 7%;
+  margin-left: 50%;
+}
+h1 {
+  font-size: 80px;
+  font-weight: 400;
+}
+h1 span {
+  color: #00986f;
+}
+.text-container a {
+  background-color: #00986f;
+  padding: 14px 40px;
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 30px;
+  border-radius: 30px;
+}
+.text-container a:hover {
+  color: #00986f;
+  border: 2px solid #fff;
+  background-color: transparent;
+}
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 150px;
+}
+.line {
+  width: 250px;
+  height: 4px;
+  background-color: #fff;
+  margin: 0 20px;
+  border-radius: 2px;
+}
+.line span {
+  width: 50%;
+  height: 8px;
+  margin-top: -2px;
+  background-color: #00986f;
+  display: block;
+  border-radius: 4px;
+}
+.active {
+  background-color: #00986f;
+}
+.active span {
+  background-color: #fff;
+  margin-left: 31px;
+}
+.on {
+  opacity: 1;
+}
+@media screen and (max-width: 576px) {
+  ul {
+    display: none;
+  }
+  main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .lamp-container {
+    position: relative;
+    top: 0;
+    left: 35%;
+    width: 200px;
+  }
+  .lamp {
+    width: 50%;
+  }
+  .light {
+    position: absolute;
+    top: 97%;
+    left: 28%;
+    transform: translateX(-50%);
+    width: 350px;
+    margin-left: -10px;
+  }
+  .text-container {
+    margin-top: 70%;
+    margin-left: 0%;
+    text-align: center;
+  }
+  h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  br {
+    display: none;
+  }
+  .text-container a {
+    padding: 7px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .control {
+    justify-content: center;
+    margin-top: 100px;
+  }
+  .line {
+    width: 175px;
+  }
+}
